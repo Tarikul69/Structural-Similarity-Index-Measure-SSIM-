@@ -1,1 +1,1 @@
-### 'Structural Similarity Index Measure (SSIM)'
+<center>Structural Similarity Index Measure (SSIM)</center>
