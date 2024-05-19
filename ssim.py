@@ -11,8 +11,8 @@ def ssim_compare(img1_path, img2_path) :
     img1 = cv2.cvtColor(img1 , cv2.COLOR_BGR2GRAY)
     img2 = cv2.cvtColor(img2 , cv2.COLOR_BGR2GRAY)
 
-    print("Img1 Resolution:", img1.shape)
-    print("Img2 Resolution:", img2.shape) 
+    #print("Img1 Resolution:", img1.shape)
+    #print("Img2 Resolution:", img2.shape) 
 
     #Check Image size and ratio
     ho, wo = img1.shape
@@ -24,16 +24,16 @@ def ssim_compare(img1_path, img2_path) :
     #Resize Image Size
     img1 = cv2.resize(img1 , dim)
     img2 = cv2.resize(img2 , dim)
-    print("Img1 Res :", img1.shape)
-    print("Img2 Res :", img2.shape)
+    #print("Img1 Res :", img1.shape)
+    #print("Img2 Res :", img2.shape)
 
     #Main function of 
     if round(ratio_orig, 2) == round(ratio_comp, 2):
         ssim_score, dif = ssim(img1, img2, full=True,)
         return ssim_score
 
-img1 = 'SSIM/img1.png'
-img2 = 'SSIM/img2.png'
+img1 = 'img1.png'
+img2 = 'img2.png'
  
 ssim_val = ssim_compare( img1, img2)
 print("Similarity: ", ssim_val)
