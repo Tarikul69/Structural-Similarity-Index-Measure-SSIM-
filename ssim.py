@@ -33,7 +33,7 @@ def ssim_compare(img1_path, img2_path) :
         return ssim_score
 
 img1 = 'img1.png'
-img2 = 'a1.png'
+img2 = 'img5.png'
  
 ssim_val = ssim_compare( img1, img2)
 print("Similarity: ", ssim_val)
